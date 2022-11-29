@@ -23,10 +23,16 @@
     </p>
     <h3>Motivation, Project Scope, Project Management</h3>
     <p>
-
+      Due to time constraints, our team decided to focus on two game modes that 
+      we believe to be the most enjoyable for the user. Future work that we would
+       like to do would involve developing new game modes or even embedding this 
+       game into a larger collection of similar obscure math/puzzle games.
     </p>
     <p>
-      We utilized GroupMe for team communications and facilitated team meetings via Zoom video conferences. We initially intended on using a ZenHub board for project management, but this proved to be unnecessary and was instead replaced with a simple living word document with week-to-week goals.
+      We utilized GroupMe for team communications and facilitated team meetings 
+      via Zoom video conferences. We initially intended on using a ZenHub board 
+      for project management, but this proved to be unnecessary and was instead 
+      replaced with a simple living word document with week-to-week goals.
     </p>
     <h3>Literature Review</h3>
     <!-->
@@ -50,7 +56,18 @@
     </p>
     <h3>Project Lifecycle</h3>
     <p>
-      Our team used an Agile software development strategy that was divided into 4 sprints. The sprint goals were Ideation & Requirements Analysis; Repository Creation, Algorithm Development, & Initial Implementation; Frontend & Backend Implementation; and Alpha Testing, Beta Testing, & Unit Testing, respectively. Each sprint was one week long and concluded with a team meeting to discuss any challenges, new directions, requirements changes, and the work that we wanted to focus on in the following sprint. The meetings were led by our project manager, Chris, and each teammate was expected to give a progress report and discuss any blockers. We maintained two different GitHub repositories for the project, one for the frontend and one for the backend. These two components were deployed as independent Google Cloud applications connected to each other via API calls.
+      Our team used an Agile software development strategy that was divided into 
+      4 sprints. The sprint goals were Ideation & Requirements Analysis; 
+      Repository Creation, Algorithm Development, & Initial Implementation; 
+      Frontend & Backend Implementation; and Alpha Testing, Beta Testing, & Unit 
+      Testing, respectively. Each sprint was one week long and concluded with a 
+      team meeting to discuss any challenges, new directions, requirements changes, 
+      and the work that we wanted to focus on in the following sprint. The meetings 
+      were led by our project manager, Chris, and each teammate was expected to 
+      give a progress report and discuss any blockers. We maintained two different 
+      GitHub repositories for the project, one for the frontend and one for the 
+      backend. These two components were deployed as independent Google Cloud 
+      applications connected to each other via API calls.
     </p>
     <h3>Requirements (Functional and Non-Functional)</h3>
     <p>
@@ -63,12 +80,28 @@
     </p>
     <h3>Design - Architecture and low-level level diagrams</h3>
     <p>
-      Our application is event driven. Below is a component diagram that describes our (descriptive) architecture:
+      Our application is event driven. Below is a component diagram that describes 
+      our (descriptive) architecture:
     </p>
     <img src="images/3300Componenetdiagram.png" alt="" width="600">
 
     <h3>Testing - Test Strategy, test cases and outcomes</h3>
     <p>
+      Our testing consisted of a blackbox portion that involved alpha and beta testing as well as a whitebox portion that involved unit tests. Alpha testing was performed by each team member and beta testing was performed by a friend of each team member after we fixed bugs that were found during the alpha testing. There was a checklist that we made to evaluate the system:
+    </p>
+    <ul>
+      <li>Create user</li>
+      <li>Login as user</li>
+      <li>Read “How to Play”</li>
+      <li>Play timed run</li>
+      <li>Play blitz round</li>
+      <li>Check leaderboard</li>
+    </ul>
+    <p>
+      Beta testing revealed that the users believed that the application met the minimum requirements of each list item, but that the UX was not ideal for a game that requires the user to play against a time limit. Future work will include improving the user interface to make it easier to use quickly. 
+    </p>
+    <p>
+      The whitebox testing consisted of 15 unit tests that were performed using a Python script. The test cases provide ~87% statement coverage and are outlined below:
 
     </p>
 
