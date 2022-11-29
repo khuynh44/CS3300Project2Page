@@ -25,6 +25,9 @@
     <p>
 
     </p>
+    <p>
+      We utilized GroupMe for team communications and facilitated team meetings via Zoom video conferences. We initially intended on using a ZenHub board for project management, but this proved to be unnecessary and was instead replaced with a simple living word document with week-to-week goals.
+    </p>
     <h3>Literature Review</h3>
     <!-->
       Other products that we researched during our development cycle, and how
@@ -78,6 +81,76 @@
       <tr>
         <td>1. InitialPage</td>
         <td>The initial page loads, indicating that the server is online and functioning</td>
+        <td>P</td>
+      </tr>
+      <tr>
+        <td>2. CreateUser</td>
+        <td>The user can create a new account.</td>
+        <td>P</td>
+      </tr>
+      <tr>
+        <td>3. CreateUserNameExists</td>
+        <td>The user cannot create a new account with an existing username.</td>
+        <td>P</td>
+      </tr>
+      <tr>
+        <td>4. ShortPassword</td>
+        <td>The user cannot create a new account with a password that is too short (<5 characters)</td>
+        <td>P</td>
+      </tr>
+      <tr>
+        <td>5. LoginValid</td>
+        <td>The user’s valid credentials are verified successfully.</td>
+        <td>P</td>
+      </tr>
+      <tr>
+        <td>6. LoginInvalidPassword</td>
+        <td>Users are denied access when they try to login in with the right username but wrong password.</td>
+        <td>P</td>
+      </tr>
+      <tr>
+        <td>7. LoginInvalidUsername</td>
+        <td>The system will invalidate a login with a username that has no associated account.</td>
+        <td>P</td>
+      </tr>
+      <tr>
+        <td>8. UpdateUserInfo (part 1)</td>
+        <td>New user’s data will be updated correctly (i.e. the fastest time should no longer be null and number of games played/won are incremented)</td>
+        <td>P</td>
+      </tr>
+      <tr>
+        <td>9. UpdateUserInfo (part 2)</td>
+        <td>The user’s data from part 1 should be updated and the fastest time should be changed.</td>
+        <td>P</td>
+      </tr>
+      <tr>
+        <td>10. UpdateUserInfo (part 3)</td>
+        <td>The user’s data from part 2 should be updated and the fastest time should not be changed.</td>
+        <td>P</td>
+      </tr>
+      <tr>
+        <td>11. UserInfoNoGamesPlayed</td>
+        <td>If a game was not played, then the user’s data should not be changed.</td>
+        <td>P</td>
+      </tr>
+      <tr>
+        <td>12. GetLeaderBoard</td>
+        <td>Successfully displays the top scores among users sorted in the order of fastest time ascending.</td>
+        <td>P</td>
+      </tr>
+      <tr>
+        <td>13. DeleteUsers</td>
+        <td>All users are successfully deleted from the database.</td>
+        <td>P</td>
+      </tr>
+      <tr>
+        <td>14. DeleteAllWrongPassword</td>
+        <td>If the wrong password is passed to the /delete endpoint, then nothing is deleted.</td>
+        <td>P</td>
+      </tr>
+      <tr>
+        <td>15. GetAllUsers</td>
+        <td>All users’ data is returned from the backend.</td>
         <td>P</td>
       </tr>
     </table>
