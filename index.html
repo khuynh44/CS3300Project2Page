@@ -7,6 +7,12 @@
     <title>CS3300 project 2</title>
   </head>
   <body style="background-color:lightgrey;">
+    <h1>Fantastic 24</h1>
+    <h3>Links and Deployment</h3>
+    <p><a href="https://fantastic24game.ue.r.appspot.com/">Fantastic 24 Website</a></p>
+    <p><a href="https://github.com/vk99999/fantastic24">Fantastic 24 Frontend Repository</a></p>
+    <p><a href="https://github.com/cmurray191/fantastic24_backend">Fantastic 24 Backend Repository</a></p>
+
     <h3>Introduction/background</h3>
     <p>
       The purpose of this project is to allow users to play 24. Traditionally
@@ -87,7 +93,9 @@
       our (descriptive) architecture:
     </p>
     <img src="images/3300Componenetdiagram.png" alt="" width="600">
-
+    <p>
+      As is shown, the data management, login, and account creation rely on the backend connections to the database and rest libraries, while any functionality related to the game itself, such as selecting problems and detecting whether a user has successfully completed it, is done by the frontend page.
+    </p>
     <h3>Testing - Test Strategy, test cases and outcomes</h3>
     <p>
       Our testing consisted of a blackbox portion that involved alpha and beta testing as well as a whitebox portion that involved unit tests. Alpha testing was performed by each team member and beta testing was performed by a friend of each team member after we fixed bugs that were found during the alpha testing. There was a checklist that we made to evaluate the system:
@@ -193,8 +201,7 @@
 
     <h3>UI</h3>
     <p>
-      Our primary goal for the UI... 
-      We have included below several images of the different pages in our product.
+      Our primary goal for the UI was to compartmentalize different functions into separate html files to promote easier changes and maintenance, and a more streamlined user flow that takes advantage of existing browser features. We have included below several images of the different pages in our product.
     </p>
     <h5>Landing page:</h5>
     <img src="images/landing.PNG" alt="" width="600">
